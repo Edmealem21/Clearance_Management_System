@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photo Gallery</title>
+  <style>
+    /* Basic styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navigation bar */
+    .navbar {
+      background-color: #1ab394;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 15px;
+      margin: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+   .gallery img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      transition: transform 0.3s ease-in-out; /* Adding transition for smooth effect */
+    }
+
+    .gallery img:hover {
+      transform: scale(1.2); /* Increase size on hover */
+    }
+
+    /* Zoom effect on click */
+    .gallery img.zoomed {
+      transform: scale(5.5); /* Zoom to 250% on click */
+      cursor: pointer;
+    }
+
+  .footer {
+      background-color: #1ab394;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+</style>
+<script>
+    function toggleZoom(image) {
+      image.classList.toggle("zoomed");
+    }
+  </script>
+
+  </style>
+</head>
+<body>
+  <!-- Navigation bar -->
+  <div class="navbar">
+    <a href="login.php">Home</a>
+  </div  >
+
+  <!-- Gallery 1 -->
+  <div class="gallery" >
+    <!-- Add your images here -->
+    <div >
+    <img src="images/debre-berhan-university-door.jpg" alt="Image 1">
+    <p  style="text-align: center;" >enterance of DBU </p>
+  </div>
+  <div>
+    <img src="images/registra.jpg" alt="Image 2">
+    <p style="text-align: center;">Registeration building</p>
+  </div>
+  <div>
+    <img src="images/admin_building.jpg" alt="Image 3">
+    <p  style="text-align: center;">Administrator Building</p>
+  </div>
+
+  <!-- Gallery 2-->
+   <div>
+    <img src="images/debre-berhan-university-door.jpg" alt="Image 1">
+    <p  style="text-align: center;" >enterance of DBU </p>
+  </div>
+  <div>
+    <img src="uploads/bu1.jpeg" alt="Image 2">
+    <p style="text-align: center;">Registeration building</p>
+  </div>
+  <div>
+    <img src="images/students-service.jpg" alt="Image 3">
+    <p  style="text-align: center;">Students Service Building </p>
+  </div>
+    <div>
+    <img src="images/debre-berhan-university-door.jpg" alt="Image 1">
+    <p  style="text-align: center;" >enterance of DBU </p>
+  </div>
+
+  <!-- Gallery 3-->
+  <div>
+    <img src="images/registerar-off.jpg" alt="Image 2">
+    <p style="text-align: center;">Registeration building</p>
+  </div>
+  <div>
+    <img src="images/pg_building1.jpg" alt="Image 3">
+    <p  style="text-align: center;">Post Graduate Building</p>
+  </div>
+
+    <div>
+    <img src="images/debre-berhan-university-door.jpg" alt="Image 1">
+    <p  style="text-align: center;" >enterance of DBU </p>
+  </div>
+  <div>
+    <img src="images/registerar-off.jpg" alt="Image 2">
+    <p style="text-align: center;">Registeration building</p>
+  </div>
+
+  <!-- Gallery 4-->
+  <div>
+    <img src="images/memerekia.jpg" alt="Image 3">
+    <p  style="text-align: center;">Graduate Building</p>
+  </div>
+
+  <div>
+    <img src="images/debre-berhan-university-door.jpg" alt="Image 1">
+    <p  style="text-align: center;" >enterance of DBU </p>
+  </div>
+  <div>
+    <img src="images/registerar-off.jpg" alt="Image 2">
+    <p style="text-align: center;">Registeration building</p>
+  </div>
+  <div>
+    <img src="images/memerekia.jpg" alt="Image 3">
+    <p  style="text-align: center;">Graduate Building</p>
+  </div>
+
+ <!-- Gallery 5 -->
+<div>
+    <img src="images/debre-berhan-university-door.jpg" alt="Image 1">
+    <p  style="text-align: center;" >enterance of DBU</p>
+  </div>
+  <div>
+    <img src="images/registerar-off.jpg" alt="Image 2">
+    <p style="text-align: center;">Registeration building</p>
+  </div>
+  <div>
+    <img src="images/tesfa gebresilase.jpg" alt="Image 3">
+    <p  style="text-align: center;">Main Library</p>
+  </div>
+<div>
+    <img src="images/debre-berhan-university-door.jpg"alt="Image 1">
+    <p  style="text-align: center;" >enterance of DBU </p>
+  </div>
+
+  <!-- Gallery 6 -->
+  <div>
+    <img src="images/registerar-off.jpg" alt="Image 2">
+    <p style="text-align: center;">Registeration building</p>
+  </div>
+  <div>
+    <img src="images/natural-class.jpg" alt="Image 3">
+    <p  style="text-align: center;">Students Class</p>
+  </div>
+ <!-- Gallery -->
+ <div>
+    <img src="images/class1.jpg" alt="Image 1">
+    <p  style="text-align: center;" >Students Class  </p>
+  </div>
+  <div>
+    <img src="images/debre-berhan-university-door.jpg" alt="Image 2">
+    <p style="text-align: center;"> DBU Enterance </p>
+  </div>
+
+  <!-- Gallery 7 -->
+  <div>
+    <img src="images/admiphoto.jpg" alt="Image 3">
+    <p  style="text-align: center;">Administrator Bulding </p>
+  </div>
+ <div>
+    <img src="images/student service.jpg" alt="Image 1">
+    <p  style="text-align: center;" >Student Service Building </p>
+  </div>
+  <div>
+    <img src="images/tesfa gebresilase.jpg" alt="Image 2">
+    <p style="text-align: center;">Main Liberary</p>
+  </div>
+  <div>
+    <img src="uploads/fv.jpeg" alt="Image 3">
+    <p  style="text-align: center;">Femail Fibrary</p>
+  </div>
+
+  <!-- Gallery 8 -->
+  <div>
+    <img src="uploads/durame.jpg" alt="Image 1">
+    <p  style="text-align: center;" >Student Cafe </p>
+  </div>
+  <!-- Gallery -->
+  <div>
+    <img src="images/megenagna.jpg" alt="Image 2">
+    <p style="text-align: center;">Megenagna Lounch</p>
+  </div>
+  <div>
+    <img src="uploads/fv.jpeg" alt="Image 3">
+    <p  style="text-align: center;">Female Lounch</p>
+  </div>
+
+<div>
+    <img src="images/megenagna.jpg" alt="Image 1">
+    <p  style="text-align: center;" >Male Lounch </p>
+  </div>
+
+  <!-- Gallery 9 -->
+  <div>
+    <img src="images/admin_building.jpg" alt="Image 2">
+    <p style="text-align: center;">Administrator Building</p>
+  </div>
+  <div>
+    <img src="images/pg_building1.jpg" alt="Image 3">
+    <p  style="text-align: center;">Post Graduate Building</p>
+  </div>
+  <div>
+    <img src="images/kebede mikael.jpg" alt="Image 2" >
+    <p style="text-align: center;">kebede  Mikael Library</p>
+  </div>
+  <div>
+    <img src="images/student service.jpg" alt="Image 3" >
+    <p  style="text-align: center;">Studens Service Bulding </p>
+  </div>
+  <div>
+    <img src="images/registerar-off.jpg" alt="Image 2" >
+    <p style="text-align: center;">Registeration building</p>
+  </div>
+  <div >
+<!--
+
+  <div style="position: relative;">
+    <img src="uploads/bu1.jpeg" alt="Image 3" id="zoomImage" onclick="zoomImage()" onmouseover="increaseSize()" onmouseout="decreaseSize()">
+    <p style="text-align: center;">ICT Room</p>
+
+</div>
+-->
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2024 My Photo Gallery. All rights reserved.
+  </div>
+</body>
+</html>

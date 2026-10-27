@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS styles for the About page */
+    body {
+      background-color: #18a689;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0.1, 0.1, 0.2, 0.1);
+    }
+
+    h1 {
+      color: #333333;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .top {
+  text-align: center;
+}
+
+.top img {
+  max-width: 15%;
+  max-height: 10%;
+  object-fit: contain;
+  display: inline-block;
+}
+
+    .about-text {
+      color: darkblue;
+      line-height: 1.6;
+      text-align: justify;
+      margin-bottom: 20px;
+      font-family: "Arial", sans-serif; /* Change font style */
+    }
+
+    .about-text p {
+      margin-bottom: 10px; /* Add space between paragraphs */
+    }
+
+    .about-image {
+      text-align: center;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px; /* Adjust the height as needed */
+    }
+
+    .about-image-img {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adding shadow box effect */
+      display: inline-block;
+      margin: 10px; /* Adding spacing between images */
+      text-align: center;
+    }
+
+    .about-image-img img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      transition: transform 0.3s ease-in-out; /* Adding transition for smooth effect */
+    }
+
+    .about-image-img:hover img {
+      transform: scale(1.2); /* Increase size on hover */
+    }
+
+    .about-image-img h3 {
+      text-decoration: underline; /* Underline image title */
+    }
+
+    /* Zoom effect on click */
+    .about-image-img.zoomed img {
+      transform: scale(5.5); /* Zoom to 250% on click */
+      cursor: pointer;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 10px 20px; /* Adjust the padding as needed */
+      background-color:#18a689 ; /* Adjust the background color as needed */
+    }
+
+    .navbar a {
+      margin-left: 10px;
+      text-decoration: none;
+      color: white ;
+    }
+
+    .navbar a:hover {
+      color: lightgray;
+      background-color:#333333 ;
+    }
+
+    .footer {
+      text-align: center;
+      color: #18a689;
+      margin-top: 50px;
+      padding-top: 40px;
+      border-top: 2px solid #dddddd;
+    }
+  </style>
+  <script>
+    function toggleZoom(image) {
+      image.classList.toggle("zoomed");
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <a href="login.php"><strong>Home</strong></a>
+    </div>
+
+    <h1>About Online Clearance System</h1>
+    <div class="top">
+      <img src="../images/db-logo.jpg" alt="Online Clearance System" />
+    </div>
+
+  <br>
+    <div class="about-text">
+      <p> <strong>Debre Berhan University is one of the leading comprehensive universities in Ethiopia founded in 2007 E.C. The university has been working hard to achieve its mission of teaching learning, research and community service, and it has continued producing qualified and productive manpower. To this end, the university focuses on academic quality, equity, and fairness.</strong></p>
+      <p><strong>Debre  Berhan University has two campuses: Main campus and Asrat Weldeyes Health Science Campus.</strong></p>
+    </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+    <div class="about-image">
+      <div class="about-image-img">
+        <img src="../images/president.jpg" alt="Online Clearance System" />
+        <h3>Image Title</h3>
+      </div>
+      <div class="about-image-img">
+        <img src="../images/president.jpg" alt="Online Clearance System" />
+        <h3> DBU Persedent</h3>
+      </div>
+      <div class="about-image-img">
+        <img src="../images/president.jpg" alt="Online Clearance System" />
+        <h3>Registeral office </h3>
+      </div>
+    </div>
+
+    <br>
+    <div class="about-text">
+      <p><strong>The Online Clearance System for students is a platform designed to simplify the process of obtaining clearance for various purposes, such as end of graduation, withdrwal, end of semester, health problem and more. The system allows students to complete the clearance process conveniently and efficiently.</strong></p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="about-image">
+      <div class="about-image-img">
+        <img src="../images/president.jpg" alt="Online Clearance System" />
+        <h3>Student Service</h3>
+      </div>
+      <div class="about-image-img">
+        <img src="../images/SPresident.jpg" alt="Online Clearance System" />
+        <h3>Students President</h3>
+      </div>
+      <div class="about-image-img">
+        <img src="../images/president.jpg" alt="Online Clearance System" />
+        <h3>Student police</h3>
+      </div>
+    </div>
+
+     <br>
+    <div class="about-text">
+      <p><strong>With the Online Clearance System, students can submit their clearance requests online, eliminating the need for manual paper work and reducing the processing time. The system provides a user-friendly interface where students can track their clearance progress, receive notifications, and view the status of their clearance requests.</strong></p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="about-image">
+      <div class="about-image-img">
+        <img src="../images/nigus.jpg" alt="Online Clearance System" />
+        <h3>DBU President</h3>
+      </div>
+      <div class="about-image-img">
+        <img src="../images/drngus.jpg" alt="Online Clearance System" />
+        <h3>DBU President</h3>
+      </div>
+      <div class="about-image-img">
+        <img src="../images/SPresident.jpg" alt="Online Clearance System" />
+        <h3>Students President</h3>
+      </div>
+    </div>
+
+    <br>
+    <div class="about-text">
+      <p><strong> Our goal is to streamline the clearance process and enhance the overall experience for students and reducing the over all work load of employee that concern clearance. By providing an online platform, we aim to minimize the hassle and ensure a smooth clearance process, allowing students to focus on their academic and personal endeavors. <strong></p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer class="footer">
+           <p><strong>&copy; 2024 Online Clearance System. All rights reserved.</strong></p>
+     </footer>
+    </div>
+  </div>
+</body>
+</html> 
+      
